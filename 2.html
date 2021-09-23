@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        var calculator = {
+            value: 0,
+            add: function (v) {
+                this.value  += v;
+                return this;
+          },
+             subtract: function (v) {
+                this.value  -= v;
+                return this;
+          },
+            out: function () {
+               document.write(this.value);
+            }
+        }
+
+        calculator.add(4).add(5).subtract(3).out();
+        
+
+    </script>
+
+</body>
+</html>
